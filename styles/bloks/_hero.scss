@@ -1,0 +1,156 @@
+@use '../helpers' as *;
+
+.hero{
+  padding-top:rem(82);
+  color: var(--color-light);
+  background-color:var( --color-future-tech);
+
+  &__content{
+    position: relative;
+  }
+
+  &__text{
+    &-top{
+      display:flex;
+      flex-direction: column;
+      gap:rem(30);
+      @include peresrtou{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: rem(24);
+      }
+    }
+  }
+
+  &__text__subtitle{
+    color:var(--color-bace);
+  }
+
+  &__mein{
+    &__text{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:fluid(rem(120), rem(40));
+      @include peresrtou{
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+
+  &__mein__text__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:rem(10);
+  }
+
+  &__text__info__un__Sinsence{
+    padding: rem(10);
+    text-align: right;
+  }
+
+  &__logo__BH{
+    color: var(--color-light);
+  }
+
+
+}
+
+.BH__logo{
+  color:var(--color-bace);
+}
+
+.hero__Sinse1973-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(12);
+  border:rem(1) solid var(--color-light);
+  border-radius:rem(99);
+  padding: rem(20) rem(45);
+  height: rem(70);
+  @include tablet{
+    @include hide;
+  }
+}
+
+
+
+.textdec{
+  @include mobile{
+    text-decoration: rem(1)  overline var(--color-light);
+  }
+}
+
+hero__content {
+  &__img-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: rem(40) rem(60);
+    width: 100%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+  }
+}
+
+.date-block {
+  cursor: pointer !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: rem(12);
+  padding: rem(15) rem(25);
+}
+
+#checkIn, #checkout {
+  @include mobile{
+    @include hide;
+  }
+}
+
+
+.hero__adventages{
+  display: flex;
+  justify-content: space-between;
+}
+
+.adventagers__adres, .adventagers__number,.location__text,.date-button{
+  font-size:fluid(31,12);
+}
+
+.adventagers__adres, .adventagers__number,{
+  @include mobile{
+    @include hide
+  }
+}
+
+
+.date-button{
+  display: flex;
+  background-color: var( --color-bace);
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hide{
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none
+}

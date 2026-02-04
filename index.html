@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bank Hotel |Home</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="scripts/main.js" type="module" defer></script>
+</head>
+<body>
+<header class="header" data-js-header>
+    <div class="header__body">
+        <div class="header__body-inner container">
+            <div class="header__overlay" data-js-header-overlay>
+                <a href="/" class="header__BH-link">
+                    BankHotel
+                </a>
+                <nav class="header__menu custom-scrollbar">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">
+                                BankHotel
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">
+                                Home <img src="./icons/Star 8.svg" class="eight-star is-hide" data-js-eight-star>
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">
+                                Rooms
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">
+                                Restaurant
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">
+                                Conference hall
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:+380322975020" class="header__phone">
+                    +38 032 297 50 20
+                </a>
+                <a href="/" class="header__menu__adres is-hide" data-js-header-adress>
+                    8 Lystopadovoho Chynu,Lviv
+                </a>
+<!--                в js нада буде зробить щоб коли нажимав на кнопку то забирався клас в ul-->
+                <ul class="header__socialnetworks is-hide" data-js-header-social-networks>
+                    <li class="Facebook">
+                        <a href="/" class="Facebook">Facebook</a>
+                    </li>
+                    <li class="instagram">
+                    <a href="/" class="Instagram">Instagram</a>
+                    </li>
+                    <li class="twitter">
+                        <a href="/" class="Twitter">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" aria-label="Open menu" title="Open menu"
+                    class="header__burger-button burger-button"
+                    data-js-header-burger-button>
+                <span class="burger-button__line"></span>
+                <span class="burger-button__line"></span>
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="hero">
+        <div class="hero__main container ">
+            <div class="hero__mein__text">
+                <div class="hero__text-top">
+                    <h1 class="hero__logo__BH">
+                        Bank<span class="BH__logo">Hotel</span>
+                    </h1>
+                    <p class="hero__text__subtitle">
+                     ROOMS//RESTAURANT//CONGRESS HALL//WINE BAR
+                    </p>
+                </div>
+                <div class="hero__mein__text__info">
+                    <div class="hero__info__Since1973">
+                        <div>
+                            <div class="hero__Sinse1973-center">
+                                <img src="./icons/Star 8.svg" alt="">
+                                <p class="hero__center__text">
+                                    Since 1973
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="hero__text__info__un__Sinsence">
+                        The luxurious hotel in the most beautiful<br> European city with an exclusive restaurant,<br> conference-hall, and art-bar.
+                    </p>
+                </div>
+            </div>
+            <div class="hero__content">
+                <div class="hero__content__img-bg">
+                    <img src="images/backImg.png" />
+                    <div id="checkIn" class="date-block">
+                        <input type="date" class="hide">
+                        <p id="TextcheckIn">
+                            <span class="date-text">CHECK IN</span>
+                            <span class="arrow">
+                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.2775 0.961426C16.2775 0.961426 13.9441 1.62809 11.9441 3.62809C9.94413 5.62809 8.27747 8.96143 8.27747 8.96143C8.27747 8.96143 6.6108 5.62809 4.6108 3.62809C2.6108 1.62809 0.277465 0.961425 0.277465 0.961425" stroke="#FCD043" stroke-width="2"/>
+                    </svg>
+                 </span>
+                        </p>
+                    </div>
+
+                    <div id="checkout" class="date-block">
+                        <input type="date" class="hide">
+                        <p id="Textcheckout">
+                            <span class="date-text">CHECK OUT</span>
+                            <span class="arrow">
+                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.2775 0.961426C16.2775 0.961426 13.9441 1.62809 11.9441 3.62809C9.94413 5.62809 8.27747 8.96143 8.27747 8.96143C8.27747 8.96143 6.6108 5.62809 4.6108 3.62809C2.6108 1.62809 0.277465 0.961425 0.277465 0.961425" stroke="#FCD043" stroke-width="2"/>
+                    </svg>
+                 </span>
+                        </p>
+                    </div>
+                    <button class="date-button">BOOK ROOM</button>
+                </div>
+            </div>
+            <div class="hero__text-bottom"></div>
+        </div>
+        <div class="hero__adventages">
+            <div class="adventagers">
+                <p class="adventagers__number">
+                    +38 032 297 50 20
+                </p>
+                <p class="adventagers__adres">
+                    8 Lystopadovoho Chynu,Lviv
+                </p>
+            </div>
+            <div class="location">
+                <p class="location__text">
+                    ART & CONGRESS<br>HALL
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__main container ">
+            <div class="about__main">
+                <div class="about__main__img">
+                    <div class="about__mein__img-lefts">
+                        <img src="images/img.png" height="850" width="606"/>
+                    </div>
+                </div>
+                <div class="about__main__text">
+                    <h2 class="aboutUs">
+                        About<br><span class="text__yelow">Us</span>
+                    </h2>
+                    <div class="text-AboutUS">
+                        <p class="about__HightQuality">
+                            HIGH QUALITY
+                        </p>
+                        <span  class="text__grey text_under_AboutUs">
+                            The five-star Bank Hotel was reopened to visitors in
+                            2016. The building was renovated and modernized to
+                            meet the expectations of the most demanding guests.
+                            We offer luxurious rooms, numerous facilities, and
+                            exceptional service
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="about__img">
+                <div class="decor">
+                    <div class="decore__element">
+                        <img src="./icons/label.svg" >
+                    </div>
+                    <div class="decore__element__img">
+                        <img src="images/sdfs.png" height="414" width="314"/>
+                    </div>
+                </div>
+                <div class="decore__element__button">
+                    <img src='./icons/button%20-%20default.svg'>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="room__apartments">
+        <div class="room__apartments container">
+
+        </div>
+    </section>
+</main>
+<footer class="footer" data-js-footer>
+    <div class="footer__innner container">
+        <div class="footer__body">
+            <nav class="footer__menu">
+                <div class="footer__menu-column">
+                    <a href="/" class="footer__menu__link">
+                        <span class="link__Slash">/</span>About us
+                    </a>
+                    <p class="footer__text-under-AboutUs">
+                        The five-star hotel in a beautiful<br>European city with a modern<br>restaurant, conference-hall, and art-bar.
+                    </p>
+                    <p class="footer__text-gray">
+                        ©2021 All rights reserved. BankHotel
+                    </p>
+                </div>
+                <div class="footer__menu-column">
+                    <a href="/" class="footer__menu__link">
+                        <span class="link__Slash">/</span>News
+                    </a>
+                    <p class="footer__text-under__News not-hide">
+                        Sign up to our newsletter not to miss<br>exclusive offers and information about<br>the upcoming events.
+                    </p>
+                    <p class="footer__text-under__News-copy">
+                        Sign up to our newsletter not to miss<br>exclusive offers and information about<br>the upcoming events.
+                    </p>
+                    <input
+                            class="footer__input input__arrow-decor" type="email" placeholder="Email"/>
+                </div>
+                <div class="footer__menu-column__So1al">
+                    <a href="/" class="footer__menu__link">
+                        <span class="link__Slash">/</span>Social
+                    </a>
+                    <ul class="footer__soc1al">
+                        <li class="facebook">
+                            <a href="/" class="Facebook">Facebook</a>
+                        </li>
+                        <li class="footer__soc1al">
+                            <a href="/" class="instagram">Instagram</a>
+                        </li>
+                        <li class="foter__coc1al">
+                            <a href="/" class="twitter">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

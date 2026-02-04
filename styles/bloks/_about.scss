@@ -1,0 +1,69 @@
+@use '../helpers' as *;
+.about__main{
+  width: 100%;
+  background-color: var(--color-future-tech);
+  display:flex;
+  align-items: center;
+  padding-top:rem(40);
+  padding-bottom: rem(40);
+  &__img{
+    &__left{
+      width: fluid(rem(606),rem(355));
+      height:fluid(rem(805),rem(355));
+    }
+  }
+}
+
+.aboutUs{
+  color:var(--color-light);
+  font-family:var(--font-family-accent);
+}
+
+.about__HightQuality{
+  color:var(--color-light);
+  font-family: var(--font-family-accent);
+  font-size:fluid(50, 30);
+  line-height: fluid(60, 30);
+}
+
+.text-AboutUS{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:rem(20);
+}
+.text_under_AboutUs{
+  white-space: pre-line;
+}
+
+
+.about__img{
+display:flex;
+  flex-direction: column;
+}
+#decoreElement{
+}
+.decore{
+  &__element{
+    @include peresrtou{
+      @include hide;
+    }
+    &__img{
+      @include peresrtou{
+        @include hide;
+      }
+    }
+    &__button{
+      @include peresrtou{
+        @include hide;
+      }
+    }
+  }
+}
+
+.about__main{
+  @include mobile{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

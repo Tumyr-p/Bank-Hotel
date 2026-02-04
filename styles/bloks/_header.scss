@@ -1,0 +1,169 @@
+@use'../helpers' as *;
+
+html{
+  &.is-lock{
+    overflow: hidden;
+  }
+}
+
+.header {
+  position:sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-future-tech);
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  &__burger-button {
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__BH-link {
+    padding-left: rem(16);
+
+    @include tablet {
+      display: none;
+    }
+
+    @include tablet-above {
+      display: block;
+    }
+  }
+
+  color: var(--color-light);
+
+  &__menu {
+    &__adres{
+      font-size: rem(18);
+    }
+    &-list {
+      display: flex;
+      column-gap: rem(70);
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      row-gap: rem(100);
+
+      @include tablet {
+        flex-direction: column;
+        row-gap: rem(20);
+        font-size: rem(24);
+      }
+
+      @include laptop {
+        column-gap: rem(20);
+      }
+    }
+
+    &-item {
+      @include tablet {
+        text-align: center;
+      }
+    }
+
+    &-link {
+      &.is-active {
+        color: var(--color-light);
+      }
+    }
+  }
+
+  &__body {
+    padding-block: rem(24);
+    width: 100%;
+    background-color: var(--color-future-tech);
+
+    &-inner {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 1rem;
+      width: 100%;
+      max-width: 100%;
+
+      @include tablet {
+        padding-inline: rem(10);
+      }
+    }
+  }
+
+  &__overlay {
+    @include tablet {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: rem(40) rem(16);
+      background-color: var(--color-future-tech);
+      transition-duration: var(--transition-duration);
+      row-gap: rem(40);
+      z-index: 100;
+      overflow-y: auto;
+    }
+
+    @include tablet-above {
+      display: contents;
+    }
+
+    &:not(.is-active) {
+      @include tablet {
+        opacity: 0;
+        pointer-events: none;
+        translate: 100% 0;
+      }
+    }
+  }
+
+  &__phone {
+    padding-right: rem(16);
+    white-space: nowrap;
+
+    @include tablet {
+      display: block;
+      padding-right: 0;
+      font-size: rem(20);
+    }
+
+    @include tablet-above {
+      display: block;
+    }
+  }
+
+  &__socialnetworks {
+    display: flex;
+    align-items: center;
+    font-size: rem(20);
+    gap: rem(20);
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include tablet {
+      font-size: rem(18);
+      gap: rem(15);
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: var(--color-light);
+      text-decoration: none;
+
+      @include hover {
+        color: var(--color-golden-yellow);
+      }
+    }
+  }
+}
+
+.is-hide {
+  display: none;
+}
+
