@@ -404,6 +404,10 @@ button[aria-label]::before {
   color: var(--gray);
 }
 
+.Miracle {
+  font-family: var(--font-family-accent);
+}
+
 /* Ховаємо стандартний скролбар глобально */
 * {
   scrollbar-width: none; /* Firefox */
@@ -937,6 +941,17 @@ hero__content__img-bg img {
     display: flex;
     flex-direction: column-reverse;
   }
+}
+
+.rooms__apt__text__title-right {
+  font-size: clamp(0.75rem, 0.5376213592rem + 0.9061488673vw, 1.625rem);
+}
+.rooms__apt__text-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

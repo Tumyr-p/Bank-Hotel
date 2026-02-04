@@ -1,0 +1,18 @@
+@use'../helpers' as *;
+.rooms__apt{
+  &__text{
+    &__title{
+      &-left{}
+      &-right{
+        font-size: fluid(26, 12);
+      }
+    }
+    &-top{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}
