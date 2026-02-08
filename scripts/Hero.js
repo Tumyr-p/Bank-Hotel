@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         input.addEventListener('change', () => {
             if (input.value) {
-
                 textSpan.textContent = input.value;
             }
         });
