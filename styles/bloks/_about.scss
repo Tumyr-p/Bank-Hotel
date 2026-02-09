@@ -17,6 +17,9 @@
 .aboutUs{
   color:var(--color-light);
   font-family:var(--font-family-accent);
+  @include peresrtou{
+    color:var(--color-bace);
+  }
 }
 
 .about__HightQuality{

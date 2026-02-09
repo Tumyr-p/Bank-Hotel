@@ -412,6 +412,10 @@ button[aria-label]::before {
   white-space: pre-wrap;
 }
 
+.color-yellow {
+  color: var(--color-bace);
+}
+
 /* Ховаємо стандартний скролбар глобально */
 * {
   scrollbar-width: none; /* Firefox */
@@ -894,6 +898,11 @@ hero__content__img-bg img {
   color: var(--color-light);
   font-family: var(--font-family-accent);
 }
+@media (width <= 50.06125rem) {
+  .aboutUs {
+    color: var(--color-bace);
+  }
+}
 
 .about__HightQuality {
   color: var(--color-light);
@@ -979,12 +988,6 @@ hero__content__img-bg img {
 .rooms__apt__element__text-left {
   flex-shrink: 1;
 }
-@media (width > 50.06125rem) {
-  .rooms__apt__element__text-left {
-    display: flex;
-    align-items: center;
-  }
-}
 .rooms__apt__element__text-left-top {
   display: flex;
   align-items: flex-start;
@@ -1012,15 +1015,14 @@ hero__content__img-bg img {
   padding-top: 5.625rem;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   gap: clamp(0.0625rem, -4.5188106796rem + 19.5469255663vw, 18.9375rem);
 }
 @media (width <= 90.06125rem) {
   .rooms__apt__element__text-left-bottom__button {
-    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     padding-top: 3.125rem;
+    justify-content: center;
   }
 }
 .rooms__apt__element__img-right {
@@ -1058,6 +1060,49 @@ hero__content__img-bg img {
 #rooms_apt-svg svg {
   width: 100%;
   height: 100%;
+  display: block;
+}
+
+.ourFaciLities-main {
+  padding-top: 9.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.75rem;
+}
+@media (width <= 64.06125rem) {
+  .ourFaciLities-main {
+    justify-content: center;
+  }
+}
+@media (width <= 64.06125rem) {
+  .ourFaciLities-main__img {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.ourFaciLities-main__title {
+  display: flex;
+  align-items: center;
+}
+.ourFaciLities-main__title {
+  display: flex;
+  align-items: center;
+}
+
+.corectText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#ourFaci {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(0.0625rem, -0.6808252427rem + 3.1715210356vw, 3.125rem);
+}
+#ourFaci svg {
   display: block;
 }
 

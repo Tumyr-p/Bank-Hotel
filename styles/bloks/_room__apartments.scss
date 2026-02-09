@@ -30,10 +30,6 @@
    &__text{
      &-left{
        flex-shrink: 1;
-       @include peresrtou-above{
-         display: flex;
-         align-items: center;
-       }
        &-top{
          display: flex;
          align-items: flex-start;
@@ -59,15 +55,14 @@
            padding-top:rem(90);
            display: flex;
            align-items: flex-start;
-           justify-content: center;
 
            gap: fluid(303, 1);
 
            @include laptop{
-             flex-direction: row;
              justify-content: center;
              align-items: flex-start;
              padding-top: rem(50);
+             justify-content: center;
            }
          }
        }
