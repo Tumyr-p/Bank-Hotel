@@ -1135,6 +1135,54 @@ hero__content__img-bg img {
   flex-direction: column;
   align-items: center;
 }
+.ourFaciLities__facilities-Hall {
+  padding-top: 3.125rem;
+  display: flex;
+  align-items: center;
+}
+.ourFaciLities__facilities-Hall.Showmenu {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.ourFaciLities__facilities-Hall__img {
+  height: clamp(9.375rem, 7.3422330097rem + 8.6731391586vw, 17.75rem) !important;
+  width: clamp(9.375rem, 7.3422330097rem + 8.6731391586vw, 17.75rem) !important;
+}
+.ourFaciLities__facilities-Hall__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.ourFaciLities__facilities-Hall__text.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ourFaciLities__facilities-Wine_bar {
+  padding-top: 3.125rem;
+  display: flex;
+  align-items: center;
+}
+.ourFaciLities__facilities-Wine_bar.Showmenu {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.ourFaciLities__facilities-Wine_bar__img {
+  height: clamp(9.375rem, 7.3422330097rem + 8.6731391586vw, 17.75rem) !important;
+  width: clamp(9.375rem, 7.3422330097rem + 8.6731391586vw, 17.75rem) !important;
+}
+.ourFaciLities__facilities-Wine_bar__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.ourFaciLities__facilities-Wine_bar__text.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 @media (width <= 64.06125rem) {
   .hotel-experience-text {

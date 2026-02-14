@@ -1,30 +1,37 @@
-function Showmenu () {
-    const arow = document.querySelector(".arow1");
-    const arow2 = document.querySelector(".arow2");
-    const Ice = document.querySelector(".ourFaciLities__facilities-Ice");
-    const textonmenu = document.querySelector(".Textonmenu");
-    const Ice__text = document.querySelector(".ourFaciLities__facilities-Ice__text");
+function initMenu() {
 
-    const Showmenu = () =>{
-        arow.classList.toggle("hide");
-        arow2.classList.toggle("hide");
-        arow2.style.rotate="90deg";
-        Ice.classList.toggle("Showmenu");
-        textonmenu.classList.toggle("hide");
-        Ice__text.classList.toggle("active");
+    const facilities = document.querySelectorAll('[class*="ourFaciLities__facilities-"]');
+
+    facilities.forEach((item) => {
+
+        const arow1 = item.querySelector(".arow1");
+        const arow2 = item.querySelector(".arow2");
+        const textOnMenu = item.querySelector(".Textonmenu");
+        const titleText = item.querySelector('[class*="__text"]');
+
+        const toggleAction = () => {
+
+            item.classList.toggle("Showmenu");
 
 
-        const imgDiv = document.querySelector(".ourFaciLities__facilities-Ice__img");
+            if (arow1) arow1.classList.toggle("hide");
+            if (arow2) {
+                arow2.classList.toggle("hide");
+                arow2.style.rotate = item.classList.contains("Showmenu") ? "90deg" : "0deg";
+            }
 
-        if (Ice.classList.contains("Showmenu")) {
-            imgDiv.style.width = "500px";
-            imgDiv.style.height = "500px";
-        } else {
-            imgDiv.style.width = "284px";
-            imgDiv.style.height = "284px";
-        }
-    }
-    arow.addEventListener("click", Showmenu);
-    arow2.addEventListener("click", Showmenu);
+
+            if (textOnMenu) textOnMenu.classList.toggle("hide");
+
+
+            if (titleText) titleText.classList.toggle("active");
+
+        };
+
+
+        if (arow1) arow1.addEventListener("click", toggleAction);
+        if (arow2) arow2.addEventListener("click", toggleAction);
+    });
 }
-Showmenu();
+
+initMenu();

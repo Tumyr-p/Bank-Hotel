@@ -65,8 +65,56 @@
         }
       }
     }
+    &-Hall{
+      padding-top: rem(50);
+        display:flex;
+        align-items: center;
+        &.Showmenu{
+          display:grid;
+          grid-template-columns:auto auto auto;
+        }
+        &__img{
+          height: fluid(284, 150)!important;
+          width: fluid(284, 150)!important;
+        }
+        &__text{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          &.active{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    &-Wine_bar{
+      padding-top: rem(50);
+      display:flex;
+      align-items: center;
+      &.Showmenu{
+        display:grid;
+        grid-template-columns:auto auto auto;
+      }
+      &__img{
+        height: fluid(284, 150)!important;
+        width: fluid(284, 150)!important;
+      }
+      &__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        &.active{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+    }
   }
-}
 .hotel-experience-text{
 @include tablet {
   padding-top: rem(30);
