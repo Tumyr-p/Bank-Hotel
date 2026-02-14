@@ -1,13 +1,15 @@
 @use'../helpers' as *;
 .ourFaciLities{
   &-main{
-    padding-top: rem(150);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:rem(92);
-    @include tablet {
+    &-top{
+      padding-top: rem(150);
+      display: flex;
+      align-items: center;
       justify-content: center;
+      gap:rem(92);
+      @include tablet {
+        justify-content: center;
+      }
     }
     &__img{
       @include tablet{
@@ -18,11 +20,57 @@
       display: flex;
       align-items: center;
     }
+    &__bottom{
+      display: flex;
+      align-items: flex-end;
+      gap:rem(80);
+      padding-top: rem(80);
+      @include tablet {
+        flex-direction: column;
+        align-items: center;
+        gap:rem(50);
+      }
+      @include peresrtou{
+        justify-content: space-between;
+        gap:0;
+      }
+    }
   }
   &-main__title{
     display: flex;
     align-items: center;
   }
+  &__facilities{
+    padding-top: rem(50);
+    &-Ice{
+      display:flex;
+      align-items: center;
+      &.Showmenu{
+        display:grid;
+        grid-template-columns:auto auto auto;
+      }
+      &__img{
+        height: fluid(284, 150)!important;
+        width: fluid(284, 150)!important;
+      }
+      &__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        &.active{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+.hotel-experience-text{
+@include tablet {
+  padding-top: rem(30);
+}
 }
 
 
@@ -31,7 +79,10 @@
 
 
 
-
+.arow{
+  width:fluid(170, 70) ;
+  height: fluid(170, 70);
+}
 .corectText {
   display: flex;
   flex-direction: column;

@@ -88,7 +88,7 @@ img,
 video {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 /**
@@ -1063,7 +1063,7 @@ hero__content__img-bg img {
   display: block;
 }
 
-.ourFaciLities-main {
+.ourFaciLities-main-top {
   padding-top: 9.375rem;
   display: flex;
   align-items: center;
@@ -1071,7 +1071,7 @@ hero__content__img-bg img {
   gap: 5.75rem;
 }
 @media (width <= 64.06125rem) {
-  .ourFaciLities-main {
+  .ourFaciLities-main-top {
     justify-content: center;
   }
 }
@@ -1086,9 +1086,65 @@ hero__content__img-bg img {
   display: flex;
   align-items: center;
 }
+.ourFaciLities-main__bottom {
+  display: flex;
+  align-items: flex-end;
+  gap: 5rem;
+  padding-top: 5rem;
+}
+@media (width <= 64.06125rem) {
+  .ourFaciLities-main__bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.125rem;
+  }
+}
+@media (width <= 50.06125rem) {
+  .ourFaciLities-main__bottom {
+    justify-content: space-between;
+    gap: 0;
+  }
+}
 .ourFaciLities-main__title {
   display: flex;
   align-items: center;
+}
+.ourFaciLities__facilities {
+  padding-top: 3.125rem;
+}
+.ourFaciLities__facilities-Ice {
+  display: flex;
+  align-items: center;
+}
+.ourFaciLities__facilities-Ice.Showmenu {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.ourFaciLities__facilities-Ice__img {
+  height: clamp(9.375rem, 7.3422330097rem + 8.6731391586vw, 17.75rem) !important;
+  width: clamp(9.375rem, 7.3422330097rem + 8.6731391586vw, 17.75rem) !important;
+}
+.ourFaciLities__facilities-Ice__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.ourFaciLities__facilities-Ice__text.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (width <= 64.06125rem) {
+  .hotel-experience-text {
+    padding-top: 1.875rem;
+  }
+}
+
+.arow {
+  width: clamp(4.375rem, 2.8580097087rem + 6.4724919094vw, 10.625rem);
+  height: clamp(4.375rem, 2.8580097087rem + 6.4724919094vw, 10.625rem);
 }
 
 .corectText {
