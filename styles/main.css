@@ -1211,13 +1211,13 @@ hero__content__img-bg img {
 }
 
 .Bestapart {
-  padding-top: 4.375rem;
+  padding-top: clamp(1.875rem, 1.1165048544rem + 3.2362459547vw, 5rem);
 }
 
 .Ourgallery {
   background-color: var(--color-future-tech);
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: clamp(1.875rem, 1.1165048544rem + 3.2362459547vw, 5rem);
+  padding-bottom: clamp(1.875rem, 1.1165048544rem + 3.2362459547vw, 5rem);
 }
 
 /*# sourceMappingURL=main.css.map */
