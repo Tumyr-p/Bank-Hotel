@@ -888,7 +888,7 @@ hero__content__img-bg img {
   align-items: center;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  margin: 0.625rem;
+  padding-right: 0.625rem;
 }
 .about__main__img__left {
   width: clamp(calc(1.38671875rem * 1rem), calc(1.1487408981rem * 1rem) + calc(1.0153721683rem * 1vw), calc(2.3671875rem * 1rem));
