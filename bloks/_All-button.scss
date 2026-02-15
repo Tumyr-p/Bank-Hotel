@@ -1,0 +1,11 @@
+@use'../helpers' as *;
+
+.button{
+  display: flex;
+  white-space: nowrap;
+
+
+  @include hover{
+    color:var( --color-link-hover);
+  }
+}

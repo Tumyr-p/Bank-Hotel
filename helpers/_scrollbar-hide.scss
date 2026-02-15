@@ -1,0 +1,41 @@
+/* Ховаємо стандартний скролбар глобально */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Забезпечуємо можливість скролу */
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Клас для елементів з власним скролбаром */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #888 #f1f1f1; /* Firefox: колір повзунка та треку */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: block; /* Показуємо скролбар */
+  width: 8px; /* Ширина для вертикального */
+  height: 8px; /* Висота для горизонтального */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

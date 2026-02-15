@@ -1,0 +1,6 @@
+@use'../helpers' as *;
+.Ourgallery{
+  background-color: var(--color-future-tech);
+  padding-top:  fluid(80 ,30);
+  padding-bottom:  fluid(80 ,30);
+}
